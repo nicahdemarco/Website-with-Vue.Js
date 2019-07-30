@@ -12,7 +12,7 @@
 					<a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<i class="fas fa-plus fa-3x"></i>
+								<i class="fas fa-plus"></i>
 							</div>
 						</div>
 						<img class="img-fluid"  :src="obj.img" />

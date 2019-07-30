@@ -30,7 +30,6 @@ export default {
 				img: './assets/img/logoV.png',
 				titleServ: 'Primer servicio',
 				serv:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam.',
-				// icon:,
 			},
 			{
 				img: './assets/img/logoV.png',
