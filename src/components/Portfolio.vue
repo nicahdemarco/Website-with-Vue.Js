@@ -15,10 +15,7 @@
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
-
-
-						<img  :src="obj.img" />
-						<span>{{obj.img}}</span>
+						<img class="img-fluid"  :src="obj.img" />
 					</a>
 					<div class="portfolio-caption">
 						<h4>{{ obj.caption }}</h4>
@@ -31,51 +28,53 @@
 </template>
 
 <script>
+
 export default {
 	data: () => ({
+
 		portfolioJSON: [
 			{
-				img: '../assets/img/graphicDesign.jpg',
+				img: require('../assets/img/graphicDesign.jpg'),
 				caption: 'Explore',
 				title: 'Graphic Design',
 			},
 			{
-				img: '../assets/img/branding.jpg',
+				img: require ('../assets/img/finish.jpg'),
 				caption: 'Finish',
 				title: 'Identify',
 			},
 			{
-				img:'../assets/img/graphicDesign.jpg',
+				img: require('../assets/img/branding.jpeg'),
 				caption: 'Lines',
 				title: 'Branding',
 			},
 			{
-				img: '../assets/img/graphicDesign.jpg',
+				img: require('../assets/img/window.jpg'),
 				caption: 'Southwest',
 				title: 'Website Design',
 			},
 			{
-				img: '../assets/img/graphicDesign.jpg',
+				img: require('../assets/img/window.jpg'),
 				caption: 'Window',
 				title: 'Photography',
 			},
 			{
-				img: '../assets/img/graphicDesign.jpg',
+				img: require('../assets/img/window.jpg'),
 				caption: 'Coffee',
 				title: 'Drink a Lot!',
 			},
 			{
-				img: '../assets/img/graphicDesign.jpg',
+				img: require('../assets/img/window.jpg'),
 				caption: 'Pizza',
 				title: 'I Ate some Pizza!',
 			},
 			{
-				img: '../assets/img/graphicDesign.jpg',
+				img: require('../assets/img/window.jpg'),
 				caption: 'Pizza',
 				title: 'I Ate some Pizza!',
 			},
 			{
-				img: '../assets/img/graphicDesign.jpg',
+				img: require('../assets/img/window.jpg'),
 				caption: 'Pizza',
 				title: 'I Ate some Pizza!',
 			},
