@@ -1,25 +1,18 @@
-<template>
-	<section id="services">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h2 class="section-heading text-uppercase">Services</h2>
-					<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-				</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-4" v-for="(obj,key) in servicesJson":key="key">
-					<span class="fa-stack fa-4x">
-						<i class="fas fa-circle fa-stack-2x text-primary"></i>
-						<i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-					</span>
-					<h4 class="service-heading">{{obj.titleServ}}</h4>
-					<p class="text-muted">{{obj.serv}}</p>
-				</div>
+<template lang="pug">
+	section#services
+		div.container
+			div.row
+				div.col-lg-12.text-center
+					h2.section-heading.text-uppercase Services
+					h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+			div.row.text-center
+				div.col-md-4(v-for="(obj,key) in servicesJson", :key="key")
+					span.fa-stack.fa-4x
+						i.fas.fa-circle.fa-stack-2x.text-primary
+						i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
+					h4.service-heading {{obj.titleServ}}
+					p.text-muted {{obj.serv}}
 
-			</div>
-		</div>
-	</section>
 </template>
 
 <script>
