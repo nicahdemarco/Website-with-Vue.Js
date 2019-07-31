@@ -1,45 +1,29 @@
-<template>
-	 <section class="bg-light" id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4" v-for="(obj,key) in teamJSON":key="key">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" :src="obj.avatar"/>
-              <h4>{{obj.name}}</h4>
-              <p class="text-muted">{{obj.title}}</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<template lang="pug">
+	section.bg-light#team
+		div.container
+			div.row
+				div.col-lg-12.text-center
+					h2.section-heading.text-uppercase Our Amazing Team
+						h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+			div.row
+				div.col-sm-4(v-for="(obj, key) in teamJSON", :key="key")
+					div.team-member
+						img.mx-auto.rounded-circle(:src="obj.avatar")
+						h4 {{ obj.name }}
+						p.text-muted {{ obj.title }}
+							ul.list-inline.social-buttons
+								li.list-inline-item
+									a(href="#")
+										i.fab.fa-twitter
+								li.list-inline-item
+									a(href="#")
+										i.fab.fa-facebook-f
+								li.list-inline-item
+									a(href="#")
+										i.fab.fa-linkedin-in
+			div.row
+				div.col-lg-8.mx-auto.text-center
+					p.large.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
 </template>
 
 <script>
@@ -73,6 +57,6 @@ export default {
 };
 </script>
 
-<style>
+ <style>
 
-</style>
+ </style>
