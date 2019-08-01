@@ -24,7 +24,7 @@
 					div.intro-text
 						div.intro-lead-in Welcome To Our Studio!
 						div.intro-heading.text-uppercase It's Nice To Meet You
-							a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href="#services") Tell Me More
+						a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href="#services") Tell Me More
 			//- Services component
 			services
 
